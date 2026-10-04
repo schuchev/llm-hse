@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# The tokenized Wikipedia dataset is large and can be recreated.
+output_dir/
+
+# Keep small JSON experiment results, but do not commit model weights or logs.
+results/**/checkpoint-*/
+results/**/tensorboard/
