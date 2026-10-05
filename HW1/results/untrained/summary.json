@@ -1,0 +1,24 @@
+{
+  "model_state": "untrained",
+  "seed": 42,
+  "eval_loss": 11.217801094055176,
+  "perplexity": 74443.89951491056,
+  "eval_metrics": {
+    "eval_loss": 11.217801094055176,
+    "eval_model_preparation_time": 0.0026,
+    "eval_runtime": 44.001,
+    "eval_samples_per_second": 113.634,
+    "eval_steps_per_second": 14.204,
+    "init_mem_cpu_alloc_delta": -1818169344,
+    "init_mem_gpu_alloc_delta": 1921769984,
+    "init_mem_cpu_peaked_delta": 1921454080,
+    "init_mem_gpu_peaked_delta": 0,
+    "eval_mem_cpu_alloc_delta": 364498944,
+    "eval_mem_gpu_alloc_delta": 8519680,
+    "eval_mem_cpu_peaked_delta": 0,
+    "eval_mem_gpu_peaked_delta": 2278356480,
+    "before_init_mem_cpu": 2724020224,
+    "before_init_mem_gpu": 0,
+    "perplexity": 74443.89951491056
+  }
+}

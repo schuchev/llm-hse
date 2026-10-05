@@ -19,6 +19,7 @@ from experiment_configs import (
     build_training_config,
     DEFAULT_BASE_BATCH_SIZE,
     EXPERIMENT_ORDER,
+    get_attention_implementation,
     get_experiment_metadata,
     SEED,
 )
@@ -327,10 +328,9 @@ def train_model(training_config):
         if training_config["bf16"]
         else torch.float32
     )
-    attn_implementation = (
-        "flash_attention_2"
-        if training_config["bf16"]
-        else "sdpa"
+    attn_implementation = get_attention_implementation(
+        experiment_name,
+        training_config,
     )
     model = create_model(
         tokenizer,

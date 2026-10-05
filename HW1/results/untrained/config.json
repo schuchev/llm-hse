@@ -1,0 +1,10 @@
+{
+  "model_state": "untrained",
+  "seed": 42,
+  "validation_size": 5000,
+  "per_device_eval_batch_size": 8,
+  "bf16": true,
+  "tf32": true,
+  "torch_compile": false,
+  "attention_implementation": "flash_attention_2"
+}

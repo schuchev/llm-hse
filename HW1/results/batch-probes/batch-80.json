@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "batch_size": 80,
+  "gradient_accumulation_steps": 1,
+  "steps_completed": 5,
+  "median_step_seconds_after_first_step": 1.207898283842951,
+  "sequences_per_second": 66.23074233161297,
+  "token_positions_per_second": 33910.14007378584,
+  "max_memory_allocated_gib": 63.02763652801514,
+  "max_memory_reserved_gib": 73.626953125,
+  "torch_compile": true,
+  "bf16": true,
+  "tf32": true
+}
