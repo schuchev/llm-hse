@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="Стадия A: итоговый eval loss">
+<rect width="960" height="520" fill="#ffffff"/>
+<text x="92" y="45" font-size="23" font-weight="700" fill="#172033">Стадия A: итоговый eval loss</text>
+<line x1="92.0" y1="78.0" x2="117.0" y2="78.0" stroke="#d88800" stroke-width="3"/>
+<text x="125.0" y="83.0" text-anchor="start" font-size="13" fill="#374151">Batch 16</text>
+<line x1="270.0" y1="78.0" x2="295.0" y2="78.0" stroke="#3345a7" stroke-width="3"/>
+<text x="303.0" y="83.0" text-anchor="start" font-size="13" fill="#374151">Batch 32</text>
+<line x1="448.0" y1="78.0" x2="473.0" y2="78.0" stroke="#1696b0" stroke-width="3"/>
+<text x="481.0" y="83.0" text-anchor="start" font-size="13" fill="#374151">Batch 64</text>
+<line x1="92.0" y1="438.0" x2="912.0" y2="438.0" stroke="#dce2eb" stroke-width="1"/>
+<text x="79.0" y="442.0" text-anchor="end" font-size="13" fill="#374151">4.0</text>
+<line x1="92.0" y1="387.8" x2="912.0" y2="387.8" stroke="#dce2eb" stroke-width="1"/>
+<text x="79.0" y="391.8" text-anchor="end" font-size="13" fill="#374151">4.2</text>
+<line x1="92.0" y1="337.7" x2="912.0" y2="337.7" stroke="#dce2eb" stroke-width="1"/>
+<text x="79.0" y="341.7" text-anchor="end" font-size="13" fill="#374151">4.4</text>
+<line x1="92.0" y1="287.5" x2="912.0" y2="287.5" stroke="#dce2eb" stroke-width="1"/>
+<text x="79.0" y="291.5" text-anchor="end" font-size="13" fill="#374151">4.6</text>
+<line x1="92.0" y1="237.4" x2="912.0" y2="237.4" stroke="#dce2eb" stroke-width="1"/>
+<text x="79.0" y="241.4" text-anchor="end" font-size="13" fill="#374151">4.8</text>
+<line x1="92.0" y1="187.2" x2="912.0" y2="187.2" stroke="#dce2eb" stroke-width="1"/>
+<text x="79.0" y="191.2" text-anchor="end" font-size="13" fill="#374151">5.0</text>
+<line x1="92.0" y1="137.1" x2="912.0" y2="137.1" stroke="#dce2eb" stroke-width="1"/>
+<text x="79.0" y="141.1" text-anchor="end" font-size="13" fill="#374151">5.2</text>
+<line x1="92.0" y1="112.0" x2="92.0" y2="438.0" stroke="#dce2eb" stroke-width="1"/>
+<text x="92.0" y="463.0" text-anchor="middle" font-size="13" fill="#374151">1.5e-4</text>
+<line x1="365.3" y1="112.0" x2="365.3" y2="438.0" stroke="#dce2eb" stroke-width="1"/>
+<text x="365.3" y="463.0" text-anchor="middle" font-size="13" fill="#374151">3e-4</text>
+<line x1="638.7" y1="112.0" x2="638.7" y2="438.0" stroke="#dce2eb" stroke-width="1"/>
+<text x="638.7" y="463.0" text-anchor="middle" font-size="13" fill="#374151">6e-4</text>
+<line x1="912.0" y1="112.0" x2="912.0" y2="438.0" stroke="#dce2eb" stroke-width="1"/>
+<text x="912.0" y="463.0" text-anchor="middle" font-size="13" fill="#374151">1.2e-3</text>
+<rect x="92" y="112" width="820" height="326" fill="none" stroke="#aab4c3"/>
+<text x="502.0" y="489.0" text-anchor="middle" font-size="15" fill="#374151">Learning rate</text>
+<text x="25" y="275.0" transform="rotate(-90 25 275.0)" text-anchor="middle" font-size="15" fill="#374151">Eval loss</text>
+<polyline points="92.00,260.64 365.33,364.42 638.67,394.15 912.00,382.02" fill="none" stroke="#d88800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="92.00" cy="260.64" r="5" fill="#d88800" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="365.33" cy="364.42" r="5" fill="#d88800" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="638.67" cy="394.15" r="5" fill="#d88800" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="912.00" cy="382.02" r="5" fill="#d88800" stroke="#ffffff" stroke-width="1.5"/>
+<polyline points="92.00,223.06 365.33,344.97 638.67,391.21 912.00,384.12" fill="none" stroke="#3345a7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="92.00" cy="223.06" r="5" fill="#3345a7" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="365.33" cy="344.97" r="5" fill="#3345a7" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="638.67" cy="391.21" r="5" fill="#3345a7" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="912.00" cy="384.12" r="5" fill="#3345a7" stroke="#ffffff" stroke-width="1.5"/>
+<polyline points="92.00,147.21 365.33,302.50 638.67,366.40 912.00,370.55" fill="none" stroke="#1696b0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="92.00" cy="147.21" r="5" fill="#1696b0" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="365.33" cy="302.50" r="5" fill="#1696b0" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="638.67" cy="366.40" r="5" fill="#1696b0" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="912.00" cy="370.55" r="5" fill="#1696b0" stroke="#ffffff" stroke-width="1.5"/>
+</svg>
