@@ -1,0 +1,25 @@
+data/
+__pycache__/
+*.pyc
+
+# Files created by the container, Jupyter, and VS Code
+.cache/
+.copilot/
+.dotnet/
+.gnupg/
+.ipython/
+.ipynb_checkpoints/
+.local/
+.nv/
+.triton/
+.vscode-server/
+.bash_history
+.gitconfig
+
+# Keep experiment metrics, not model weights or checkpoints
+results/**/checkpoint-*/
+results/**/*.safetensors
+results/**/*.bin
+results/**/pytorch_model.pt
+results/**/optimizer.pt
+results/**/scheduler.pt
