@@ -1,0 +1,5 @@
+{
+  "exact_match": 0.083,
+  "token_f1": 0.4071416389907213,
+  "num_test_examples": 1000
+}

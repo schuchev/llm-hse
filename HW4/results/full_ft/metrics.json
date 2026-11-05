@@ -1,0 +1,34 @@
+{
+  "experiment": "full_ft",
+  "method": "full_ft",
+  "train_seconds": 834.6868807384744,
+  "global_step": 900,
+  "total_parameters": 1543714304,
+  "trainable_parameters": 1543714304,
+  "trainable_percent": 100.0,
+  "peak_allocated_gib": 25.79935598373413,
+  "peak_reserved_gib": 74.26953125,
+  "train_metrics": {
+    "train_runtime": 834.4939,
+    "train_samples_per_second": 17.256,
+    "train_steps_per_second": 1.078,
+    "total_flos": 6.202253020478669e+16,
+    "train_loss": 0.18858678076002333,
+    "epoch": 1.44
+  },
+  "eval_metrics": {
+    "eval_loss": 0.1895262449979782,
+    "eval_runtime": 18.7177,
+    "eval_samples_per_second": 53.426,
+    "eval_steps_per_second": 13.356,
+    "eval_entropy": 1.5187779984474181,
+    "eval_num_tokens": 5534120.0,
+    "eval_mean_token_accuracy": 0.9453719592094422,
+    "epoch": 1.44
+  },
+  "test_metrics": {
+    "exact_match": 0.323,
+    "token_f1": 0.5965427959999331,
+    "num_test_examples": 1000
+  }
+}
