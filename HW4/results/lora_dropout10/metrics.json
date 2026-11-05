@@ -1,0 +1,34 @@
+{
+  "experiment": "lora_dropout10",
+  "method": "lora",
+  "train_seconds": 751.8195805959404,
+  "global_step": 900,
+  "total_parameters": 1545893376,
+  "trainable_parameters": 2179072,
+  "trainable_percent": 0.1409587513492263,
+  "peak_allocated_gib": 17.50208330154419,
+  "peak_reserved_gib": 74.162109375,
+  "train_metrics": {
+    "train_runtime": 751.6096,
+    "train_samples_per_second": 19.159,
+    "train_steps_per_second": 1.197,
+    "total_flos": 6.212567251611648e+16,
+    "train_loss": 0.18934936655892265,
+    "epoch": 1.44
+  },
+  "eval_metrics": {
+    "eval_loss": 0.18529988825321198,
+    "eval_runtime": 19.6864,
+    "eval_samples_per_second": 50.797,
+    "eval_steps_per_second": 12.699,
+    "eval_entropy": 1.467021632194519,
+    "eval_num_tokens": 5534120.0,
+    "eval_mean_token_accuracy": 0.94623744058609,
+    "epoch": 1.44
+  },
+  "test_metrics": {
+    "exact_match": 0.338,
+    "token_f1": 0.5984381779433499,
+    "num_test_examples": 1000
+  }
+}
