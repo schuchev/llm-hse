@@ -1,0 +1,21 @@
+{
+  "experiment": "smoke_shaped_vllm_no_checkpoint_20",
+  "global_step": 20,
+  "selected_checkpoint": null,
+  "selected_step": 20,
+  "train_seconds": 284.061607837677,
+  "train_metrics": {
+    "train_runtime": 284.0377,
+    "train_samples_per_second": 1.127,
+    "train_steps_per_second": 0.07,
+    "total_flos": 0.0,
+    "train_loss": 0.0015926181338727474,
+    "epoch": 0.007446016381236039
+  },
+  "evaluation_metrics": null,
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.9.0",
+    "trl": "1.16.0"
+  }
+}

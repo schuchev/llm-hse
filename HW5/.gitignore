@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+
+# Reproducible training data and downloaded model files.
+data/
+
+# Keep report artifacts, metrics and BFCL predictions, but not model weights.
+results/**/model/
+results/**/checkpoint-*/
+

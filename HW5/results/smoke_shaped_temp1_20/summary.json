@@ -1,0 +1,21 @@
+{
+  "experiment": "smoke_shaped_temp1_20",
+  "global_step": 20,
+  "selected_checkpoint": null,
+  "selected_step": 20,
+  "train_seconds": 91.75407552719116,
+  "train_metrics": {
+    "train_runtime": 91.7283,
+    "train_samples_per_second": 3.489,
+    "train_steps_per_second": 0.218,
+    "total_flos": 0.0,
+    "train_loss": -0.014329460822045803,
+    "epoch": 0.007446016381236039
+  },
+  "evaluation_metrics": null,
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.9.0",
+    "trl": "1.16.0"
+  }
+}

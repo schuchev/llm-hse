@@ -1,0 +1,21 @@
+{
+  "experiment": "smoke_shaped_vllm_g8_8",
+  "global_step": 8,
+  "selected_checkpoint": null,
+  "selected_step": 8,
+  "train_seconds": 104.18981409072876,
+  "train_metrics": {
+    "train_runtime": 104.1661,
+    "train_samples_per_second": 1.229,
+    "train_steps_per_second": 0.077,
+    "total_flos": 0.0,
+    "train_loss": 0.05217288713902235,
+    "epoch": 0.0014892032762472078
+  },
+  "evaluation_metrics": null,
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.9.0",
+    "trl": "1.16.0"
+  }
+}
