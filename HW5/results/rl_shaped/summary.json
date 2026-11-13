@@ -1,0 +1,21 @@
+{
+  "experiment": "rl_shaped",
+  "global_step": 300,
+  "selected_checkpoint": null,
+  "selected_step": 300,
+  "train_seconds": 1248.4396297931671,
+  "train_metrics": {
+    "train_runtime": 1248.4159,
+    "train_samples_per_second": 3.845,
+    "train_steps_per_second": 0.24,
+    "total_flos": 0.0,
+    "train_loss": -0.004115899615377809,
+    "epoch": 0.11169024571854058
+  },
+  "evaluation_metrics": null,
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.9.0",
+    "trl": "1.16.0"
+  }
+}
