@@ -1,0 +1,1710 @@
+{
+  "data": {
+    "benchmark_id": "adf8a7973aa6",
+    "end_ns": 1795266959368948909,
+    "endpoint_summaries": {
+      "localhost:8000": {
+        "endpoint_url": "http://localhost:8000/metrics",
+        "info": {
+          "avg_fetch_latency_ms": 5.896558476190476,
+          "avg_update_interval_ms": 323.36183950000003,
+          "duration_seconds": 33.629631308,
+          "first_fetch_ns": 1795266925739317601,
+          "first_update_ns": 1795266925739317601,
+          "last_fetch_ns": 1795266959368948909,
+          "last_update_ns": 1795266959368948909,
+          "median_update_interval_ms": 333.411724,
+          "total_fetches": 105,
+          "unique_updates": 105
+        },
+        "metrics": {
+          "http_request_duration_highr_seconds": {
+            "description": "Latency with many buckets but no API specific labels. Made for more accurate percentile calculations.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "0.01": 0,
+                  "0.025": 0,
+                  "0.05": 0,
+                  "0.075": 0,
+                  "0.1": 0,
+                  "0.25": 0,
+                  "0.5": 0,
+                  "0.75": 0,
+                  "1.0": 0,
+                  "1.5": 1,
+                  "10.0": 40,
+                  "2.0": 6,
+                  "2.5": 7,
+                  "3.0": 7,
+                  "3.5": 8,
+                  "30.0": 40,
+                  "4.0": 8,
+                  "4.5": 8,
+                  "5.0": 10,
+                  "60.0": 40,
+                  "7.5": 34
+                },
+                "stats": {
+                  "avg": 5.8682909399969505,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 1.8192466072667404,
+                  "p1_estimate": 1.4544968805799918,
+                  "p25_estimate": 5.50282813165502,
+                  "p50_estimate": 6.673539332234114,
+                  "p5_estimate": 1.6285928662236793,
+                  "p75_estimate": 7.346286507193304,
+                  "p90_estimate": 7.767483785788589,
+                  "p95_estimate": 7.953437029573131,
+                  "p99_estimate": 8.10598104343621,
+                  "sum": 234.731637599878,
+                  "sum_rate": 6.369930134691742
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "http_request_duration_seconds": {
+            "description": "Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 0,
+                  "0.1": 0,
+                  "0.5": 0,
+                  "1.0": 0
+                },
+                "labels": {
+                  "handler": "/reset_prefix_cache",
+                  "method": "POST"
+                },
+                "stats": {
+                  "count": 0
+                }
+              },
+              {
+                "buckets": {
+                  "+Inf": 39,
+                  "0.1": 0,
+                  "0.5": 0,
+                  "1.0": 0
+                },
+                "labels": {
+                  "handler": "/v1/chat/completions",
+                  "method": "POST"
+                },
+                "stats": {
+                  "avg": 5.979289832286154,
+                  "count": 39,
+                  "count_rate": 1.2732678892138751,
+                  "p10_estimate": 1.995857966457231,
+                  "p1_estimate": 1.099585796645723,
+                  "p25_estimate": 3.489644916143077,
+                  "p50_estimate": 5.979289832286154,
+                  "p5_estimate": 1.4979289832286153,
+                  "p75_estimate": 8.46893474842923,
+                  "p90_estimate": 9.962721698115077,
+                  "p95_estimate": 10.460650681343692,
+                  "p99_estimate": 10.858993867926584,
+                  "sum": 233.19230345916003,
+                  "sum_rate": 7.613237743752977
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "http_requests": {
+            "description": "Total number of requests by method, status and handler.",
+            "series": [
+              {
+                "labels": {
+                  "handler": "/reset_prefix_cache",
+                  "method": "POST",
+                  "status": "2xx"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "handler": "/v1/chat/completions",
+                  "method": "POST",
+                  "status": "2xx"
+                },
+                "stats": {
+                  "rate": 1.2732678892138751,
+                  "total": 39.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "process_cpu_seconds": {
+            "description": "Total user and system CPU time spent in seconds.",
+            "series": [
+              {
+                "stats": {
+                  "rate": 0.0724559911630582,
+                  "total": 2.669999999999998
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "process_max_fds": {
+            "description": "Maximum number of open file descriptors.",
+            "series": [
+              {
+                "stats": {
+                  "avg": 65535.0,
+                  "max": 65535.0,
+                  "min": 65535.0,
+                  "p1": 65535.0,
+                  "p10": 65535.0,
+                  "p25": 65535.0,
+                  "p5": 65535.0,
+                  "p50": 65535.0,
+                  "p75": 65535.0,
+                  "p90": 65535.0,
+                  "p95": 65535.0,
+                  "p99": 65535.0,
+                  "std": 0.0
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "process_open_fds": {
+            "description": "Number of open file descriptors.",
+            "series": [
+              {
+                "stats": {
+                  "avg": 51.94230769230769,
+                  "max": 58.0,
+                  "min": 39.0,
+                  "p1": 40.03,
+                  "p10": 47.0,
+                  "p25": 51.0,
+                  "p5": 44.15,
+                  "p50": 52.0,
+                  "p75": 55.0,
+                  "p90": 56.0,
+                  "p95": 57.0,
+                  "p99": 57.97,
+                  "std": 3.830959531701227
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "process_resident_memory_bytes": {
+            "description": "Resident memory size in bytes.",
+            "series": [
+              {
+                "stats": {
+                  "avg": 1416245563.0769231,
+                  "max": 1417248768.0,
+                  "min": 1410433024.0,
+                  "p1": 1410495938.56,
+                  "p10": 1414260326.4,
+                  "p25": 1414627328.0,
+                  "p5": 1414103040.0,
+                  "p50": 1416724480.0,
+                  "p75": 1417248768.0,
+                  "p90": 1417248768.0,
+                  "p95": 1417248768.0,
+                  "p99": 1417248768.0,
+                  "std": 1468643.5823611643
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "process_start_time_seconds": {
+            "description": "Start time of the process since unix epoch in seconds.",
+            "series": [
+              {
+                "stats": {
+                  "avg": 1795266864.16,
+                  "max": 1795266864.16,
+                  "min": 1795266864.16,
+                  "p1": 1795266864.16,
+                  "p10": 1795266864.16,
+                  "p25": 1795266864.16,
+                  "p5": 1795266864.16,
+                  "p50": 1795266864.16,
+                  "p75": 1795266864.16,
+                  "p90": 1795266864.16,
+                  "p95": 1795266864.16,
+                  "p99": 1795266864.16,
+                  "std": 0.0
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "process_virtual_memory_bytes": {
+            "description": "Virtual memory size in bytes.",
+            "series": [
+              {
+                "stats": {
+                  "avg": 23703823478.153847,
+                  "max": 23778615296.0,
+                  "min": 23703097344.0,
+                  "p1": 23703097344.0,
+                  "p10": 23703097344.0,
+                  "p25": 23703097344.0,
+                  "p5": 23703097344.0,
+                  "p50": 23703097344.0,
+                  "p75": 23703097344.0,
+                  "p90": 23703097344.0,
+                  "p95": 23703097344.0,
+                  "p99": 23703097344.0,
+                  "std": 7405144.439895448
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "python_gc_collections": {
+            "description": "Number of times this generation was collected",
+            "series": [
+              {
+                "labels": {
+                  "generation": "0"
+                },
+                "stats": {
+                  "rate": 0.24423367807772442,
+                  "total": 9.0
+                }
+              },
+              {
+                "labels": {
+                  "generation": "1"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "generation": "2"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "python_gc_objects_collected": {
+            "description": "Objects collected during gc",
+            "series": [
+              {
+                "labels": {
+                  "generation": "0"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "generation": "1"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "generation": "2"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "python_gc_objects_uncollectable": {
+            "description": "Uncollectable objects found during GC",
+            "series": [
+              {
+                "labels": {
+                  "generation": "0"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "generation": "1"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "generation": "2"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "python_info": {
+            "description": "Python platform information",
+            "series": [
+              {
+                "labels": {
+                  "implementation": "CPython",
+                  "major": "3",
+                  "minor": "12",
+                  "patchlevel": "13",
+                  "version": "3.12.13"
+                },
+                "stats": {
+                  "avg": 1.0,
+                  "max": 1.0,
+                  "min": 1.0,
+                  "p1": 1.0,
+                  "p10": 1.0,
+                  "p25": 1.0,
+                  "p5": 1.0,
+                  "p50": 1.0,
+                  "p75": 1.0,
+                  "p90": 1.0,
+                  "p95": 1.0,
+                  "p99": 1.0,
+                  "std": 0.0
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "vllm:cache_config_info": {
+            "description": "Information of the LLMEngine CacheConfig",
+            "series": [
+              {
+                "labels": {
+                  "_block_size_resolved": "True",
+                  "block_size": "16",
+                  "cache_dtype": "auto",
+                  "calculate_kv_scales": "False",
+                  "enable_prefix_caching": "True",
+                  "engine": "0",
+                  "gpu_memory_utilization": "0.92",
+                  "hash_block_size": "None",
+                  "is_attention_free": "False",
+                  "kv_cache_dtype_skip_layers": "[]",
+                  "kv_cache_memory_bytes": "None",
+                  "kv_offloading_backend": "native",
+                  "kv_offloading_size": "None",
+                  "kv_sharing_fast_prefill": "False",
+                  "mamba_block_size": "None",
+                  "mamba_cache_dtype": "auto",
+                  "mamba_cache_mode": "none",
+                  "mamba_page_size_padded": "None",
+                  "mamba_ssm_cache_dtype": "auto",
+                  "num_cpu_blocks": "None",
+                  "num_gpu_blocks": "26074",
+                  "num_gpu_blocks_override": "None",
+                  "prefix_caching_hash_algo": "sha256",
+                  "sliding_window": "None",
+                  "user_specified_block_size": "False",
+                  "user_specified_mamba_block_size": "False"
+                },
+                "stats": {
+                  "avg": 1.0,
+                  "max": 1.0,
+                  "min": 1.0,
+                  "p1": 1.0,
+                  "p10": 1.0,
+                  "p25": 1.0,
+                  "p5": 1.0,
+                  "p50": 1.0,
+                  "p75": 1.0,
+                  "p90": 1.0,
+                  "p95": 1.0,
+                  "p99": 1.0,
+                  "std": 0.0
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "vllm:e2e_request_latency_seconds": {
+            "description": "Histogram of e2e request latency in seconds.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "0.3": 0,
+                  "0.5": 0,
+                  "0.8": 0,
+                  "1.0": 0,
+                  "1.5": 1,
+                  "10.0": 40,
+                  "120.0": 40,
+                  "15.0": 40,
+                  "1920.0": 40,
+                  "2.0": 6,
+                  "2.5": 7,
+                  "20.0": 40,
+                  "240.0": 40,
+                  "30.0": 40,
+                  "40.0": 40,
+                  "480.0": 40,
+                  "5.0": 10,
+                  "50.0": 40,
+                  "60.0": 40,
+                  "7680.0": 40,
+                  "960.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 5.866477930545807,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 1.8027289898290155,
+                  "p1_estimate": 1.4397801407789423,
+                  "p25_estimate": 5.240776539150156,
+                  "p50_estimate": 6.449848279690938,
+                  "p5_estimate": 1.6121869451894282,
+                  "p75_estimate": 7.542793285822721,
+                  "p90_estimate": 8.198560289501792,
+                  "p95_estimate": 8.417149290728148,
+                  "p99_estimate": 8.592020491709231,
+                  "sum": 234.65911722183228,
+                  "sum_rate": 6.367962143728887
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:engine_sleep_state": {
+            "description": "Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B",
+                  "sleep_state": "awake"
+                },
+                "stats": {
+                  "avg": 1.0,
+                  "max": 1.0,
+                  "min": 1.0,
+                  "p1": 1.0,
+                  "p10": 1.0,
+                  "p25": 1.0,
+                  "p5": 1.0,
+                  "p50": 1.0,
+                  "p75": 1.0,
+                  "p90": 1.0,
+                  "p95": 1.0,
+                  "p99": 1.0,
+                  "std": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B",
+                  "sleep_state": "weights_offloaded"
+                },
+                "stats": {
+                  "avg": 0.0,
+                  "max": 0.0,
+                  "min": 0.0,
+                  "p1": 0.0,
+                  "p10": 0.0,
+                  "p25": 0.0,
+                  "p5": 0.0,
+                  "p50": 0.0,
+                  "p75": 0.0,
+                  "p90": 0.0,
+                  "p95": 0.0,
+                  "p99": 0.0,
+                  "std": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B",
+                  "sleep_state": "discard_all"
+                },
+                "stats": {
+                  "avg": 0.0,
+                  "max": 0.0,
+                  "min": 0.0,
+                  "p1": 0.0,
+                  "p10": 0.0,
+                  "p25": 0.0,
+                  "p5": 0.0,
+                  "p50": 0.0,
+                  "p75": 0.0,
+                  "p90": 0.0,
+                  "p95": 0.0,
+                  "p99": 0.0,
+                  "std": 0.0
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "vllm:estimated_flops_per_gpu": {
+            "description": "Estimated number of floating point operations per GPU (for Model Flops Utilization calculations).",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:estimated_read_bytes_per_gpu": {
+            "description": "Estimated number of bytes read from memory per GPU (for Model Flops Utilization calculations).",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:estimated_write_bytes_per_gpu": {
+            "description": "Estimated number of bytes written to memory per GPU (for Model Flops Utilization calculations).",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:external_prefix_cache_hits": {
+            "description": "External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:external_prefix_cache_queries": {
+            "description": "External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:generation_tokens": {
+            "description": "Number of generation tokens processed.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 450.69254727942746,
+                  "total": 16608.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:inter_token_latency_seconds": {
+            "description": "Histogram of inter-token latency in seconds.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 16568,
+                  "0.01": 0,
+                  "0.025": 16190,
+                  "0.05": 16420,
+                  "0.075": 16479,
+                  "0.1": 16507,
+                  "0.15": 16545,
+                  "0.2": 16568,
+                  "0.3": 16568,
+                  "0.4": 16568,
+                  "0.5": 16568,
+                  "0.75": 16568,
+                  "1.0": 16568,
+                  "10.0": 16568,
+                  "2.5": 16568,
+                  "20.0": 16568,
+                  "40.0": 16568,
+                  "5.0": 16568,
+                  "7.5": 16568,
+                  "80.0": 16568
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 0.013853883809267931,
+                  "count": 16568,
+                  "count_rate": 449.6070642657487,
+                  "p10_estimate": 0.011461278545593883,
+                  "p1_estimate": 0.0111691544232762,
+                  "p25_estimate": 0.011948152082790025,
+                  "p50_estimate": 0.012759607978116927,
+                  "p5_estimate": 0.011298987366528504,
+                  "p75_estimate": 0.013571063873443829,
+                  "p90_estimate": 0.01405793741063997,
+                  "p95_estimate": 0.01422022858970535,
+                  "p99_estimate": 0.04795633358135051,
+                  "sum": 229.5311469519511,
+                  "sum_rate": 6.228804028163743
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:iteration_tokens_total": {
+            "description": "Histogram of number of tokens per engine_step.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 2355,
+                  "1.0": 27,
+                  "1024.0": 2347,
+                  "128.0": 2320,
+                  "16.0": 2315,
+                  "16384.0": 2355,
+                  "2048.0": 2347,
+                  "256.0": 2323,
+                  "32.0": 2315,
+                  "4096.0": 2354,
+                  "512.0": 2332,
+                  "64.0": 2315,
+                  "8.0": 2315,
+                  "8192.0": 2355
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 26.77791932059448,
+                  "count": 2355,
+                  "count_rate": 63.90781243033789,
+                  "p10_estimate": 4.031633772145328,
+                  "p1_estimate": 0.886125675755613,
+                  "p25_estimate": 5.216051548552229,
+                  "p50_estimate": 7.1726921513812165,
+                  "p5_estimate": 3.636827846676361,
+                  "p75_estimate": 7.572346251406604,
+                  "p90_estimate": 7.812138711421836,
+                  "p95_estimate": 7.892069531426913,
+                  "p99_estimate": 479.15785231364515,
+                  "sum": 63062.0,
+                  "sum_rate": 1711.318245215273
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:kv_cache_usage_perc": {
+            "description": "KV-cache usage. 1 means 100 percent usage.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 0.022091450336186265,
+                  "max": 0.04092356077167947,
+                  "min": 0.0,
+                  "p1": 0.0,
+                  "p10": 0.011452460399647157,
+                  "p25": 0.01598396808959457,
+                  "p5": 0.00862194607448315,
+                  "p50": 0.02109461895447401,
+                  "p75": 0.030031066620642033,
+                  "p90": 0.033931653434587504,
+                  "p95": 0.03825988570551917,
+                  "p99": 0.03953476776742229,
+                  "std": 0.009699769402329597
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "vllm:mm_cache_hits": {
+            "description": "Multi-modal cache hits, in terms of number of cached items.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:mm_cache_queries": {
+            "description": "Multi-modal cache queries, in terms of number of queried items.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:num_preemptions": {
+            "description": "Cumulative number of preemption from the engine.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:num_requests_running": {
+            "description": "Number of requests in model execution batches.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 6.6923076923076925,
+                  "max": 8.0,
+                  "min": 0.0,
+                  "p1": 0.0,
+                  "p10": 3.3000000000000007,
+                  "p25": 6.0,
+                  "p5": 1.0,
+                  "p50": 8.0,
+                  "p75": 8.0,
+                  "p90": 8.0,
+                  "p95": 8.0,
+                  "p99": 8.0,
+                  "std": 2.1319434730703906
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "vllm:num_requests_waiting": {
+            "description": "Number of requests waiting to be processed.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 0.0,
+                  "max": 0.0,
+                  "min": 0.0,
+                  "p1": 0.0,
+                  "p10": 0.0,
+                  "p25": 0.0,
+                  "p5": 0.0,
+                  "p50": 0.0,
+                  "p75": 0.0,
+                  "p90": 0.0,
+                  "p95": 0.0,
+                  "p99": 0.0,
+                  "std": 0.0
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "vllm:num_requests_waiting_by_reason": {
+            "description": "Number of waiting requests by reason. Reason labels: 'capacity' = waiting for scheduling capacity; 'deferred' = deferred by transient constraints (LoRA budget, KV transfer, blocked status). Sum of all reasons equals vllm:num_requests_waiting.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B",
+                  "reason": "capacity"
+                },
+                "stats": {
+                  "avg": 0.0,
+                  "max": 0.0,
+                  "min": 0.0,
+                  "p1": 0.0,
+                  "p10": 0.0,
+                  "p25": 0.0,
+                  "p5": 0.0,
+                  "p50": 0.0,
+                  "p75": 0.0,
+                  "p90": 0.0,
+                  "p95": 0.0,
+                  "p99": 0.0,
+                  "std": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B",
+                  "reason": "deferred"
+                },
+                "stats": {
+                  "avg": 0.0,
+                  "max": 0.0,
+                  "min": 0.0,
+                  "p1": 0.0,
+                  "p10": 0.0,
+                  "p25": 0.0,
+                  "p5": 0.0,
+                  "p50": 0.0,
+                  "p75": 0.0,
+                  "p90": 0.0,
+                  "p95": 0.0,
+                  "p99": 0.0,
+                  "std": 0.0
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "vllm:prefix_cache_hits": {
+            "description": "Prefix cache hits, in terms of number of cached tokens.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:prefix_cache_queries": {
+            "description": "Prefix cache queries, in terms of number of queried tokens.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 1260.6256979358457,
+                  "total": 46454.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:prompt_tokens": {
+            "description": "Number of prefill tokens processed.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 1260.6256979358457,
+                  "total": 46454.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:prompt_tokens_by_source": {
+            "description": "Number of prompt tokens by source.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B",
+                  "source": "local_compute"
+                },
+                "stats": {
+                  "rate": 1260.6256979358457,
+                  "total": 46454.0
+                }
+              },
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B",
+                  "source": "local_cache_hit"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B",
+                  "source": "external_kv_transfer"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:prompt_tokens_cached": {
+            "description": "Number of cached prompt tokens (local + external).",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:request_decode_time_seconds": {
+            "description": "Histogram of time spent in DECODE phase for request.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "0.3": 0,
+                  "0.5": 0,
+                  "0.8": 0,
+                  "1.0": 0,
+                  "1.5": 3,
+                  "10.0": 40,
+                  "120.0": 40,
+                  "15.0": 40,
+                  "1920.0": 40,
+                  "2.0": 7,
+                  "2.5": 7,
+                  "20.0": 40,
+                  "240.0": 40,
+                  "30.0": 40,
+                  "40.0": 40,
+                  "480.0": 40,
+                  "5.0": 10,
+                  "50.0": 40,
+                  "60.0": 40,
+                  "7680.0": 40,
+                  "960.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 5.738278673798777,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 1.6937565444416671,
+                  "p1_estimate": 1.2771511437376295,
+                  "p25_estimate": 5.134835575277955,
+                  "p50_estimate": 6.3339682984507775,
+                  "p5_estimate": 1.4939408905202147,
+                  "p75_estimate": 7.4130615774090085,
+                  "p90_estimate": 8.060517544783949,
+                  "p95_estimate": 8.276336200575594,
+                  "p99_estimate": 8.448991125208911,
+                  "sum": 229.5311469519511,
+                  "sum_rate": 6.228804028163743
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:request_generation_tokens": {
+            "description": "Number of generation tokens processed.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "1.0": 0,
+                  "10.0": 0,
+                  "100.0": 3,
+                  "1000.0": 40,
+                  "10000.0": 40,
+                  "2.0": 0,
+                  "20.0": 0,
+                  "200.0": 8,
+                  "2000.0": 40,
+                  "20000.0": 40,
+                  "5.0": 0,
+                  "50.0": 0,
+                  "500.0": 15,
+                  "5000.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 415.2,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 118.24471830575615,
+                  "p1_estimate": 90.1224455643386,
+                  "p25_estimate": 337.90193083301,
+                  "p50_estimate": 517.2574506921685,
+                  "p5_estimate": 100.0,
+                  "p75_estimate": 517.2574506921685,
+                  "p90_estimate": 517.2574506921685,
+                  "p95_estimate": 517.2574506921685,
+                  "p99_estimate": 517.2574506921685,
+                  "sum": 16608.0,
+                  "sum_rate": 450.69254727942746
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:request_inference_time_seconds": {
+            "description": "Histogram of time spent in RUNNING phase for request.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "0.3": 0,
+                  "0.5": 0,
+                  "0.8": 0,
+                  "1.0": 0,
+                  "1.5": 2,
+                  "10.0": 40,
+                  "120.0": 40,
+                  "15.0": 40,
+                  "1920.0": 40,
+                  "2.0": 6,
+                  "2.5": 7,
+                  "20.0": 40,
+                  "240.0": 40,
+                  "30.0": 40,
+                  "40.0": 40,
+                  "480.0": 40,
+                  "5.0": 10,
+                  "50.0": 40,
+                  "60.0": 40,
+                  "7680.0": 40,
+                  "960.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 5.849937410489656,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 1.790705133001522,
+                  "p1_estimate": 1.3767507661077545,
+                  "p25_estimate": 5.233429390700543,
+                  "p50_estimate": 6.438354124119389,
+                  "p5_estimate": 1.5505448763514458,
+                  "p75_estimate": 7.527506948137271,
+                  "p90_estimate": 8.180998642548,
+                  "p95_estimate": 8.398829207351575,
+                  "p99_estimate": 8.573093659194438,
+                  "sum": 233.99749641958624,
+                  "sum_rate": 6.350007690170522
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:request_max_num_generation_tokens": {
+            "description": "Histogram of maximum number of requested generation tokens.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "1.0": 0,
+                  "10.0": 0,
+                  "100.0": 3,
+                  "1000.0": 40,
+                  "10000.0": 40,
+                  "2.0": 0,
+                  "20.0": 0,
+                  "200.0": 8,
+                  "2000.0": 40,
+                  "20000.0": 40,
+                  "5.0": 0,
+                  "50.0": 0,
+                  "500.0": 15,
+                  "5000.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 415.2,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 118.24471830575615,
+                  "p1_estimate": 90.1224455643386,
+                  "p25_estimate": 337.90193083301,
+                  "p50_estimate": 517.2574506921685,
+                  "p5_estimate": 100.0,
+                  "p75_estimate": 517.2574506921685,
+                  "p90_estimate": 517.2574506921685,
+                  "p95_estimate": 517.2574506921685,
+                  "p99_estimate": 517.2574506921685,
+                  "sum": 16608.0,
+                  "sum_rate": 450.69254727942746
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:request_params_max_tokens": {
+            "description": "Histogram of the max_tokens request parameter.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "1.0": 0,
+                  "10.0": 0,
+                  "100.0": 0,
+                  "1000.0": 40,
+                  "10000.0": 40,
+                  "2.0": 0,
+                  "20.0": 0,
+                  "200.0": 0,
+                  "2000.0": 40,
+                  "20000.0": 40,
+                  "5.0": 0,
+                  "50.0": 0,
+                  "500.0": 0,
+                  "5000.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 512.0,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 500.0,
+                  "p1_estimate": 500.0,
+                  "p25_estimate": 500.0,
+                  "p50_estimate": 500.0,
+                  "p5_estimate": 500.0,
+                  "p75_estimate": 577.23125,
+                  "p90_estimate": 650.35625,
+                  "p95_estimate": 674.73125,
+                  "p99_estimate": 694.23125,
+                  "sum": 20480.0,
+                  "sum_rate": 555.7673030035329
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:request_params_n": {
+            "description": "Histogram of the n request parameter.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "1.0": 40,
+                  "10.0": 40,
+                  "2.0": 40,
+                  "20.0": 40,
+                  "5.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 1.0,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 0.5100000000000001,
+                  "p1_estimate": 0.42225,
+                  "p25_estimate": 0.65625,
+                  "p50_estimate": 0.8999999999999999,
+                  "p5_estimate": 0.46125000000000005,
+                  "p75_estimate": 1.0,
+                  "p90_estimate": 1.0,
+                  "p95_estimate": 1.0,
+                  "p99_estimate": 1.0,
+                  "sum": 40.0,
+                  "sum_rate": 1.0854830136787752
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:request_prefill_kv_computed_tokens": {
+            "description": "Histogram of new KV tokens computed during prefill (excluding cached tokens).",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "1.0": 0,
+                  "10.0": 0,
+                  "100.0": 4,
+                  "1000.0": 31,
+                  "10000.0": 40,
+                  "2.0": 0,
+                  "20.0": 0,
+                  "200.0": 5,
+                  "2000.0": 32,
+                  "20000.0": 40,
+                  "5.0": 0,
+                  "50.0": 0,
+                  "500.0": 17,
+                  "5000.0": 39
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 1161.35,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 113.59319910894372,
+                  "p1_estimate": 82.74332177485952,
+                  "p25_estimate": 309.94698114400734,
+                  "p50_estimate": 607.0949236074132,
+                  "p5_estimate": 98.20582177485953,
+                  "p75_estimate": 948.7050426550322,
+                  "p90_estimate": 3360.326160411121,
+                  "p95_estimate": 4271.41391551316,
+                  "p99_estimate": 5970.234644382777,
+                  "sum": 46454.0,
+                  "sum_rate": 1260.6256979358457
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:request_prefill_time_seconds": {
+            "description": "Histogram of time spent in PREFILL phase for request.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "0.3": 36,
+                  "0.5": 39,
+                  "0.8": 40,
+                  "1.0": 40,
+                  "1.5": 40,
+                  "10.0": 40,
+                  "120.0": 40,
+                  "15.0": 40,
+                  "1920.0": 40,
+                  "2.0": 40,
+                  "2.5": 40,
+                  "20.0": 40,
+                  "240.0": 40,
+                  "30.0": 40,
+                  "40.0": 40,
+                  "480.0": 40,
+                  "5.0": 40,
+                  "50.0": 40,
+                  "60.0": 40,
+                  "7680.0": 40,
+                  "960.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 0.11165873669087886,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 0.002391228903339923,
+                  "p1_estimate": 0.0,
+                  "p25_estimate": 0.02666511077927812,
+                  "p50_estimate": 0.07952384464802234,
+                  "p5_estimate": 0.0,
+                  "p75_estimate": 0.1794607079176037,
+                  "p90_estimate": 0.24455804916892893,
+                  "p95_estimate": 0.3017411307960211,
+                  "p99_estimate": 0.44006619801397523,
+                  "sum": 4.466349467635155,
+                  "sum_rate": 0.12120366200678002
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:request_prompt_tokens": {
+            "description": "Number of prefill tokens processed.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "1.0": 0,
+                  "10.0": 0,
+                  "100.0": 4,
+                  "1000.0": 31,
+                  "10000.0": 40,
+                  "2.0": 0,
+                  "20.0": 0,
+                  "200.0": 5,
+                  "2000.0": 32,
+                  "20000.0": 40,
+                  "5.0": 0,
+                  "50.0": 0,
+                  "500.0": 17,
+                  "5000.0": 39
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 1161.35,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 113.59319910894372,
+                  "p1_estimate": 82.74332177485952,
+                  "p25_estimate": 309.94698114400734,
+                  "p50_estimate": 607.0949236074132,
+                  "p5_estimate": 98.20582177485953,
+                  "p75_estimate": 948.7050426550322,
+                  "p90_estimate": 3360.326160411121,
+                  "p95_estimate": 4271.41391551316,
+                  "p99_estimate": 5970.234644382777,
+                  "sum": 46454.0,
+                  "sum_rate": 1260.6256979358457
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:request_queue_time_seconds": {
+            "description": "Histogram of time spent in WAITING phase for request.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "0.3": 40,
+                  "0.5": 40,
+                  "0.8": 40,
+                  "1.0": 40,
+                  "1.5": 40,
+                  "10.0": 40,
+                  "120.0": 40,
+                  "15.0": 40,
+                  "1920.0": 40,
+                  "2.0": 40,
+                  "2.5": 40,
+                  "20.0": 40,
+                  "240.0": 40,
+                  "30.0": 40,
+                  "40.0": 40,
+                  "480.0": 40,
+                  "5.0": 40,
+                  "50.0": 40,
+                  "60.0": 40,
+                  "7680.0": 40,
+                  "960.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 5.208118818700314e-6,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 0.0,
+                  "p1_estimate": 0.0,
+                  "p25_estimate": 0.0,
+                  "p50_estimate": 7.471428491649833e-6,
+                  "p5_estimate": 0.0,
+                  "p75_estimate": 7.471428491649833e-6,
+                  "p90_estimate": 7.471428491649833e-6,
+                  "p95_estimate": 7.471428491649833e-6,
+                  "p99_estimate": 7.471428491649833e-6,
+                  "sum": 0.00020832475274801254,
+                  "sum_rate": 5.653324510919959e-6
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:request_success": {
+            "description": "Count of successfully processed requests.",
+            "series": [
+              {
+                "labels": {
+                  "engine": "0",
+                  "finished_reason": "stop",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.4341932054715101,
+                  "total": 16.0
+                }
+              },
+              {
+                "labels": {
+                  "engine": "0",
+                  "finished_reason": "length",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.6512898082072651,
+                  "total": 24.0
+                }
+              },
+              {
+                "labels": {
+                  "engine": "0",
+                  "finished_reason": "abort",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "engine": "0",
+                  "finished_reason": "error",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "engine": "0",
+                  "finished_reason": "repetition",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "vllm:request_time_per_output_token_seconds": {
+            "description": "Histogram of time_per_output_token_seconds per request.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "0.01": 0,
+                  "0.025": 40,
+                  "0.05": 40,
+                  "0.075": 40,
+                  "0.1": 40,
+                  "0.15": 40,
+                  "0.2": 40,
+                  "0.3": 40,
+                  "0.4": 40,
+                  "0.5": 40,
+                  "0.75": 40,
+                  "1.0": 40,
+                  "10.0": 40,
+                  "2.5": 40,
+                  "20.0": 40,
+                  "40.0": 40,
+                  "5.0": 40,
+                  "7.5": 40,
+                  "80.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 0.014243634241822008,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 0.010899699815142112,
+                  "p1_estimate": 0.010154942005702348,
+                  "p25_estimate": 0.01214096283087505,
+                  "p50_estimate": 0.014211429509666213,
+                  "p5_estimate": 0.010485945476564467,
+                  "p75_estimate": 0.01634461066686603,
+                  "p90_estimate": 0.01762553635272768,
+                  "p95_estimate": 0.01805251158134823,
+                  "p99_estimate": 0.018394091764244672,
+                  "sum": 0.5697453696728804,
+                  "sum_rate": 0.015461223022551152
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "vllm:time_to_first_token_seconds": {
+            "description": "Histogram of time to first token in seconds.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 40,
+                  "0.001": 0,
+                  "0.005": 0,
+                  "0.01": 0,
+                  "0.02": 0,
+                  "0.04": 1,
+                  "0.06": 11,
+                  "0.08": 19,
+                  "0.1": 23,
+                  "0.25": 32,
+                  "0.5": 39,
+                  "0.75": 40,
+                  "1.0": 40,
+                  "10.0": 40,
+                  "160.0": 40,
+                  "2.5": 40,
+                  "20.0": 40,
+                  "2560.0": 40,
+                  "40.0": 40,
+                  "5.0": 40,
+                  "640.0": 40,
+                  "7.5": 40,
+                  "80.0": 40
+                },
+                "labels": {
+                  "engine": "0",
+                  "model_name": "Qwen/Qwen3-8B"
+                },
+                "stats": {
+                  "avg": 0.12823944091796874,
+                  "count": 40,
+                  "count_rate": 1.0854830136787752,
+                  "p10_estimate": 0.04481840218675149,
+                  "p1_estimate": 0.0352945629740482,
+                  "p25_estimate": 0.05712418088090432,
+                  "p50_estimate": 0.08201237014362116,
+                  "p5_estimate": 0.041380097376638766,
+                  "p75_estimate": 0.1105624884812971,
+                  "p90_estimate": 0.2926626339338768,
+                  "p95_estimate": 0.3648024362008175,
+                  "p99_estimate": 0.5308259309857671,
+                  "sum": 5.12957763671875,
+                  "sum_rate": 0.13920173480011797
+                }
+              }
+            ],
+            "type": "histogram"
+          }
+        }
+      }
+    },
+    "endpoints_configured": [
+      "http://localhost:8000/metrics"
+    ],
+    "endpoints_successful": [
+      "http://localhost:8000/metrics"
+    ],
+    "error_summary": [],
+    "phase": "warmup",
+    "phase_index": 0,
+    "phase_kind": "warmup",
+    "phase_name": "warmup",
+    "phase_results": [],
+    "start_ns": 1795266925739317601
+  },
+  "phase": {
+    "end_ns": 1795266959341786495,
+    "phase_index": 0,
+    "phase_kind": "warmup",
+    "phase_name": "warmup",
+    "profiling_index": null,
+    "start_ns": 1795266925735912204,
+    "was_cancelled": false
+  },
+  "schema_version": 1,
+  "warnings": []
+}
