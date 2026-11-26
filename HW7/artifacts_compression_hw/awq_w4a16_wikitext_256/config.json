@@ -1,0 +1,7 @@
+{
+  "method": "awq",
+  "scheme": "W4A16",
+  "calibration": "wikitext",
+  "num_samples": 256,
+  "ignore": []
+}

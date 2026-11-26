@@ -1,0 +1,7 @@
+artifacts_compression_hw/**/model/
+artifacts_compression_hw/**/checkpoint-*/
+artifacts_compression_hw/**/*.safetensors
+artifacts_compression_hw/**/*.bin
+artifacts_compression_hw/**/*.pt
+artifacts_compression_hw/**/optimizer.pt
+artifacts_compression_hw/**/scheduler.pt
