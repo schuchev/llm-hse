@@ -1,0 +1,8 @@
+{
+  "method": "smoothquant",
+  "scheme": "W8A8",
+  "calibration": "massive",
+  "num_samples": 256,
+  "smoothing_strength": 0.5,
+  "ignore": []
+}

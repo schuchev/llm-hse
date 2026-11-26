@@ -1,0 +1,4 @@
+artifacts_compression_hw/
+.ipynb_checkpoints/
+__pycache__/
+.venv/
